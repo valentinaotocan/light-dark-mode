@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/valentinaotocan/light-dark-mode/static/css/main.1914e83e.css",
+    "main.js": "/valentinaotocan/light-dark-mode/static/js/main.98e457d5.js",
+    "index.html": "/valentinaotocan/light-dark-mode/index.html",
+    "main.1914e83e.css.map": "/valentinaotocan/light-dark-mode/static/css/main.1914e83e.css.map",
+    "main.98e457d5.js.map": "/valentinaotocan/light-dark-mode/static/js/main.98e457d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1914e83e.css",
+    "static/js/main.98e457d5.js"
+  ]
+}
