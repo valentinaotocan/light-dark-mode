@@ -1,0 +1,11 @@
+@mixin flex-jc-ai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@mixin theme-color ($bg-color, $color) {
+  background-color: $bg-color;
+  color: $color;
+}

@@ -1,0 +1,26 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#light {
+  @include theme-color($bg-color-light, $dark-text-color);
+  nav {
+    border-bottom: 2px solid $red-color;
+  }
+  footer {
+    border-top: 2px solid $red-color;
+  }
+}
+
+#dark {
+  @include theme-color($bg-color-dark, $light-text-color);
+  nav {
+    border-bottom: 2px solid $peach-yellow;
+  }
+  footer {
+    border-top: 2px solid $peach-yellow;
+  }
+}

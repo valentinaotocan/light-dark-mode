@@ -1,0 +1,33 @@
+nav {
+  @extend %spacing-container;
+  align-items: center;
+  position: relative;
+  .pl-small {
+    padding-left: 8px;
+  }
+  .switch {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 50px;
+    .sun {
+      @include flex-jc-ai;
+      color: #fff;
+      padding-right: 2px;
+    }
+    .moon {
+      @include flex-jc-ai;
+      color: #000;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  nav {
+    justify-content: flex-start !important;
+    .switch {
+      right: 17px;
+    }
+  }
+}
