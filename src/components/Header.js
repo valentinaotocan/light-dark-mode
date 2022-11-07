@@ -13,11 +13,11 @@ export default function Header() {
   return (
     <>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about" className="pl-small">
+        <Link to="light-dark-mode/">Home</Link>
+        <Link to="light-dark-mode/about" className="pl-small">
           About
         </Link>
-        <Link to="/contact" className="pl-small">
+        <Link to="light-dark-mode/contact" className="pl-small">
           Contact
         </Link>
         <div className="switch">
@@ -43,9 +43,9 @@ export default function Header() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="light-dark-mode/" element={<Home />} />
+        <Route path="light-dark-mode/about" element={<About />} />
+        <Route path="light-dark-mode/contact" element={<Contact />} />
       </Routes>
     </>
   );
