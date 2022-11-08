@@ -6,18 +6,18 @@ import ReactSwitch from "react-switch";
 import { useContext } from 'react';
 import { ThemeContext } from "../App";
 import { BsMoonStarsFill } from "react-icons/bs";
-import {CgSun} from 'react-icons/cg'
+import { CgSun } from 'react-icons/cg';
 
 export default function Header() {
   const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <>
       <nav>
-        <Link to="light-dark-mode/">Home</Link>
-        <Link to="light-dark-mode/about" className="pl-small">
+        <Link to="/">Home</Link>
+        <Link to="/about" className="pl-small">
           About
         </Link>
-        <Link to="light-dark-mode/contact" className="pl-small">
+        <Link to="/contact" className="pl-small">
           Contact
         </Link>
         <div className="switch">
@@ -43,9 +43,9 @@ export default function Header() {
       </nav>
 
       <Routes>
-        <Route path="light-dark-mode/" element={<Home />} />
-        <Route path="light-dark-mode/about" element={<About />} />
-        <Route path="light-dark-mode/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );
